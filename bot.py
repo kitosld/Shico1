@@ -52,7 +52,7 @@ async def listpacks(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if not banned_packs:
         await update.message.reply_text("Нет заблокированных стикерпаков.")
     else:
-        msg = "Заблокированные паки:
+        msg = "Заблокированные паки:"
 " + "\n".join(f"• {p}" for p in banned_packs)
         await update.message.reply_text(msg)
 
